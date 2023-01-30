@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +7,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private modalservice: NgbModal) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  public open(modal: any): void {
-    this.modalservice.open(modal);
   }
 
 }
